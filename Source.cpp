@@ -6,6 +6,7 @@
 #define NOMINMAX
 #include <Windows.h>
 int count = 0;
+bool hist = false;
 std::vector<std::string> passwords{};
 
 // Display all passwords in the vector 
@@ -21,6 +22,7 @@ void history()
 	}
 	else
 		std::cout << "You havent generated any passwords yet! \n";
+	hist = true;
 }
 
 // Copy password to clipboard 
@@ -84,7 +86,7 @@ int main()
 	
 	while (true)
 	{
-		if (count == 1)
+		if (count == 1 && !hist)
 		std::cout << "TIP: To view past passwords type 'h' \n";
 		std::cout << "Would you like symbols? y or n: ";
 
