@@ -107,11 +107,6 @@ int main()
 				gen(noSym);
 			}
 		}
-		else
-		{
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		}
 	}
 
 	return 0;
