@@ -99,13 +99,10 @@ int main()
 				history();
 
 			else if (q == "y")
-			{
 				gen(alphaNum);
-			}
+
 			if (q == "n")
-			{
 				gen(noSym);
-			}
 		}
 	}
 
