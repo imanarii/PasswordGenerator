@@ -98,7 +98,7 @@ int main()
 			if (q == "h")
 				history();
 
-			else if (q == "y")
+			if (q == "y")
 				gen(alphaNum);
 
 			if (q == "n")
